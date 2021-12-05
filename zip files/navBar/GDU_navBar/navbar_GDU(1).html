@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDU</title>
+    <style>
+    #navbar{
+        transition: 2s linear;
+    }
+    #logo{
+        display: block;
+        border-radius: 10%;
+        border:2px solid #FCBE02;
+        transition: 1s;
+    }
+
+    .container{
+        padding: 0%;
+    }
+  
+    #navContainer{
+        margin-left: 0%;
+        margin-right: 0%;
+        transition: 1s;
+    }
+    #navbar-toggler{
+        width: 80px;
+        height: 60px;
+    }
+   #home{
+        color: white;
+        }
+        #pg{
+        color: white;
+        }
+        #contact{
+        color: white;
+        }
+        #aboutUs{
+        color: white;
+        }
+        nav{
+            background-color: black;
+        }
+        .ms-auto{
+            margin-left: 0%;
+        }
+        .bg-col{
+            background-color: black;
+        }
+        
+        #title{
+            color:#FCBE02;
+            padding-left: 5%;   
+  }
+        .nav-item{
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+       
+        #logoCompressed{
+            border:#FCBE02 1px solid;
+            border-radius: 10%;
+        }
+        #pg:hover{
+                color:#FCBE02 ;
+        }
+        #home:hover{
+             color:#FCBE02 ;
+            }
+         #contact:hover{
+                color:#FCBE02 ;
+                 }
+    #aboutUs:hover{
+          color:#FCBE02 ;
+        }
+        @media only screen and (max-width: 1000px) { 
+  #logo { 
+      
+    display: none; 
+  } 
+ 
+  .navbar-brand{
+      display: flex;
+      margin-left:5%;
+  }
+  
+    #title{
+        padding-top: 8%;
+        padding-left: 2%;   
+    }
+  .container{
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+ 
+  .nav-item{
+            padding-right: 25px;
+            padding-left: 30px;
+        }
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-col navbar-dark py-3" id="nav_bar"  style="margin:0%">
+        <div class = "container" id="navContainer">
+            <img src="logo.png" id ="logo" onclick="logo_click()" height="60px" width="65px" alt="logo"/>
+            <div href = "#" class = "navbar-brand"  >
+                <div class = "navbar-toggler">
+                <img src="logo.png" id="logoCompressed"   onclick="logo_click()"  type = "button" data-bs-toggle = "collapse" data-bs-target = "#navmenu"  height="60px" width="65px"/>
+                </div>
+                <span id="title" > GameDevUtopia </span>
+            </div>    
+            <div class = "collapse navbar-collapse" id = "navmenu">
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item">
+                        <a href ="#" class = "nav-link"><u  id="home">Home</u></a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#" class = "nav-link"><u  id="pg">Project Gallery</u></a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#" class = "nav-link"><u  id="contact">Contact</u></a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#" class = "nav-link"><u id="aboutUs">About Us</u></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <script>
+      
+        function logo_click() {
+            var a=document.getElementById("pg")
+            if(a.style.display=="block"){
+                a.style.display="none"
+                document.getElementById("home").style.display="none";
+                document.getElementById("contact").style.display="none";
+                document.getElementById("aboutUs").style.display="none";
+                document.getElementById("title").style.display="none";
+                document.getElementById("nav_bar").style.backgroundColor="white";
+                document.getElementById("logo").style.borderRadius="10%";
+                document.getElementById("logo").style.marginLeft='50%'
+                  
+            }else{
+                document.getElementById("nav_bar").style.backgroundColor="black";
+                document.getElementById("title").style.display="block";
+                document.getElementById("home").style.display="block";
+                a.style.display="block";
+                document.getElementById("contact").style.display="block";
+                document.getElementById("aboutUs").style.display="block";
+                document.getElementById("logo").style.marginLeft='0%'
+            }
+        } 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

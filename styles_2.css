@@ -1,0 +1,71 @@
+#about_us{
+  background-color:#010005DE;
+
+}
+
+.heading
+{
+  text-align: center;
+  color:#FCBE02;
+  font-family: 'Roboto';
+  text-decoration: underline;
+  font-size: 64px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+
+}
+.outer
+{
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+.inner
+{
+  padding:2%;
+}
+
+.text{
+  color: #fff;
+  font-family: Roboto;
+  padding: 2%;
+  text-align: left;
+  font-size:1.5rem;
+}
+.card_image
+{
+  text-align:center;
+/*  width: 240px;
+  height:240px;*/
+  width:200px;
+  height: 200px;
+  padding:10%;
+  border-radius: 40px;
+}
+.intro
+{
+  color: #fff;
+  font-family: Roboto;
+  text-align: center;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+.card:hover{
+  transform:translateY(-10px);
+}
+@media(max_width:1300px)
+{
+  .h1
+  {
+    color: blue;
+  }
+  .card_image
+  {
+    text-align: center;
+  }
+}

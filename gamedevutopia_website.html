@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDevUtopia</title>
+
+    <!-- navbar section start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- navbar section end -->
+
+
+    <!-- Home section start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <!-- home section end -->
+
+
+    <!-- project gallery section start -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  	    <!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	    <!-- Bootstrap JS -->
+  	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+    <!-- project gallery section end -->
+
+
+    <!-- contact us section start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- contact us section end -->
+
+
+    <!-- About Us Part Start -->
+    <link rel="stylesheet" href="styles_2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- About Us End -->
+
+
+    <style>
+        /* navbar section start */
+        #navbar{
+        transition: 2s linear;
+        }
+        #logo{
+            display: block;
+            border-radius: 10%;
+            border:2px solid #FCBE02;
+            transition: 1s;
+        }
+
+        .container1{
+            padding: 0%;
+        }
+    
+        #navContainer{
+            margin-left: 0%;
+            margin-right: 0%;
+            transition: 1s;
+        }
+        #navbar-toggler{
+            width: 80px;
+            height: 60px;
+        }
+        #home{
+            color: white;
+        }
+        #pg{
+        color: white;
+        }
+        #contact{
+        color: white;
+        }
+        #aboutUs{
+        color: white;
+        }
+        nav{
+            background-color: black;
+        }
+        .ms-auto{
+            margin-left: 0%;
+        }
+        .bg-col{
+            background-color: black;
+        }
+        
+        #title{
+            color:#FCBE02;
+            padding-left: 5%;   
+        }
+        .nav-item{
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+       
+        #logoCompressed{
+            border:#FCBE02 1px solid;
+            border-radius: 10%;
+        }
+        #pg:hover{
+                color:#FCBE02 ;
+        }
+        #home:hover{
+             color:#FCBE02 ;
+            }
+         #contact:hover{
+                color:#FCBE02 ;
+                 }
+        #aboutUs:hover{
+          color:#FCBE02 ;
+        }
+        @media only screen and (max-width: 1000px) { 
+            #logo { 
+                
+                display: none; 
+            } 
+            
+            .navbar-brand{
+                display: flex;
+                margin-left:5%;
+            }
+            
+            #title{
+                padding-top: 8%;
+                padding-left: 2%;   
+            }
+            .container1{
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+            
+            .nav-item{
+                padding-right: 25px;
+                padding-left: 30px;
+            }
+        }
+        /* navbar section end */
+
+        /* contact us section start */
+        @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400&display=swap');
+        @media(max-width:767px){
+            .box{
+                width:50%;
+                margin-left: 20%;
+            }
+        }
+        @media(min-width:768px){
+            .box{
+                width: 70%;
+                margin-left: 10%; 
+            }
+        }
+        @media(width:3600px){
+            
+        }
+        .input-box{
+            border: none;
+            border-bottom: 1px solid #FFFFFF;
+            background-color: transparent;
+            margin: 6%;
+            padding: 6px;
+            color: #FFFFFF;
+            font-weight: 300;
+            font-family:'Zilla Slab,serif';
+            font-size:160%;
+            width: 50%;
+        }
+        #i1:hover{
+            border-bottom: 1px solid #FFBF00;
+        }
+        #i2:hover{
+            border-bottom: 1px solid #FFBF00;
+        }
+        #mess1{
+            background-color: transparent;
+            border: 3px solid #FFFFFF;
+            padding-bottom: 30px;
+            padding-top: 10px;
+            padding-left: 10px;
+            margin: 6%;
+            color: #FFFFFF;
+            font-weight: 400;
+            font-family:'Zilla Slab,serif';
+            font-size:160%;
+        }
+        #mess1:hover{
+            border: 3px solid #FFBF00;
+        }
+        .sub{
+            background-color: #C4C4C4;
+        }
+        .sub:hover{
+            background-color: rgb(87, 243, 243);
+            font-weight: bolder;
+        }
+        ::placeholder{
+            color: #FFFFFF;
+        }
+        .imgs:hover{
+            animation: rotate 0.6s linear 0.5;
+            -webkit-animation: rotate 0.6s linear 0.5;
+            -moz-animation: rotate 0.6s linear 0.5;
+            -o-animation: rotate 0.6s linear 0.5;
+            -ms-animation: rotate 0.6s linear 0.5;
+        }
+        @keyframes rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        @-webkit-keyframes rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        @-moz-keyframes rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        @-o-keyframes rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        @-ms-keyframes rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        #img1{
+            width: 8%;
+        }
+        #img2{
+            width: 13%;
+        }
+        #img3{
+            width:10%;
+        }
+        #img4{
+            width:12%;
+        }
+        .social{
+            text-align: center;
+        }
+        .sbox{
+            background-color: #252426;
+            box-shadow: 0px 12px 18px #000000;
+        }
+        /* contact us section end */
+    </style>
+</head>
+<body>
+    <!-- NavBar Section Start -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-col navbar-dark py-3" id="nav_bar"  style="margin:0%">
+            <div class = "container1" id="navContainer">
+                <img src="logo.png" id ="logo" onclick="logo_click()" height="60px" width="65px" alt="logo"/>
+                <div href = "#" class = "navbar-brand"  >
+                    <div class = "navbar-toggler">
+                    <img src="logo.png" id="logoCompressed"   onclick="logo_click()"  type = "button" data-bs-toggle = "collapse" data-bs-target = "#navmenu"  height="60px" width="65px"/>
+                    </div>
+                    <span id="title" > GameDevUtopia </span>
+                </div>    
+                <div class = "collapse navbar-collapse" id = "navmenu">
+                    <ul class = "navbar-nav ms-auto">
+                        <li class = "nav-item">
+                            <a href ="#home_section" class = "nav-link"><u  id="home">Home</u></a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#testimonial" class = "nav-link"><u  id="pg">Project Gallery</u></a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#contact_section" class = "nav-link"><u  id="contact">Contact</u></a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#about_us" class = "nav-link"><u id="aboutUs">About Us</u></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar Section End -->
+
+
+    <!-- Home Section Start -->
+    <section id="home_section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3" ></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="12" ></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="15" ></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\aries.jpg" alt="First slide">
+              <div class="centered"><center><p class="custom" >Welcome to </p><p class="private"> GameDev Utopia </p> </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\Aries.png" alt="Second slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p><p class="private"> GameDev Utopia </p></center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\chaous.png" alt="Third slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p> </center></div>
+              </div>
+              <div class="carousel-item ">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\Charter Yacht.png" alt="Fourth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p> </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\Connect.png" alt="Fifth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\Cubicles.png" alt="Sixth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p> </center></div>
+              </div>
+              <div class="carousel-item ">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\Invisible Maze.png" alt="Seventh slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\iy72LS.jpeg" alt="Eighth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p> </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\kAB09D.png" alt="Ninth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p><p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+              <div class="carousel-item ">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\rtRXyI.png" alt="Tenth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p> </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\Snake.png" alt="Eleventh slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p><p class="private"> GameDev Utopia </p> </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\Star.png" alt="Twelth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p><p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+              <div class="carousel-item ">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\TOWNHALL.png" alt="Thirteenth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\ui8wcZ.png" alt="Fourteenth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\VB.png" alt="Fifteenth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+              <div class="carousel-item ">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\Voxel Battle Chaok Awakens.jpeg" alt="Sixteenth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p><p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\voxel battle.jpg" alt="Seventeenth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p><p class="private"> GameDev Utopia </p> </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\Vulcan Flick.png" alt="Eighteenth slide">
+              <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="All game ARTS (1)\All game ARTS\VulganFlick.jpeg" alt="Eighteenth slide">
+        <div class="centered"><center><p class="custom" >Welcome to </p> <p class="private"> GameDev Utopia </p>  </center></div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+    <!-- Home Section End -->
+
+
+    <!-- Project Gallery Section Start-->
+    <section id="testimonial">
+        <div class="container">
+            <div class="section-title">
+                PROJECT GALLERY
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Slide Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="3"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="4"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="carousel-content text-center">
+                                   
+                                    <!-- <p><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</i></p>
+                                    <h3><span>-</span> Cubicles <span>-</span></h3> -->
+                                    <div class="conatiner-fluid" id="contentbox">
+                                        
+                                            <div class="row one">
+                                                <div class="col-lg-4">
+                                                    <img id="id" src="Cubicles.png">
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="main_contents" id="maintext">
+                                                        <p>PICT Cubicles is a hyper-casual game developed by Teams24 and is currently hosted on itch.io platform. The game follows an infinite loop approach and has been inspired from everyone’s favourite hyper-casual game Flappy Bird by dotGears studios.</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                                
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="carousel-content">
+                                    
+                                    <div class="conatiner-fluid" id="contentbox">
+                                        <div class="container-fluid" id="maincontentbox">
+                                            <div class="row one">
+                                                <div class="col-lg-4">
+                                                    <img id="id" src="Charter Yacht.png">
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="main_contents" id="maintext">
+                                                        <p>Charter Yacht is a unique game developed by Teams24 which comes under the category of survival game. The game’s unique design allows for the player’s brain to react quickly to the dynamically changing Game environment where the player has to stress upon their visual memory in order to chart a path for the Yacht, making this game a good source of adrenaline rush!</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="carousel-content">
+                                    
+                                    <div class="conatiner-fluid" id="contentbox">
+                                        <div class="container-fluid" id="maincontentbox">
+                                            <div class="row one">
+                                                <div class="col-lg-4">
+                                                    <img id="id" src="voxel battle.jpg">
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="main_contents" id="maintext">
+                                                        <p>Voxel Battle is a game developed by Teams24 which comes under the category of shooter and survival games and is currently published on the Itch.io platform. The game’s unique design blends both the genres of games and employs a unique algorithm for solving the enemy-crowding problem in normal 2D shooter video games.</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-content">
+                                    
+                                    <div class="conatiner-fluid" id="contentbox">
+                                        <div class="container-fluid" id="maincontentbox">
+                                            
+                                            <div class="row one">
+                                                <div class="col-lg-4">
+                                                    <img id="id" src="Voxel Battle Chaok Awakens.jpeg">
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="main_contents" id="maintext">
+                                                        <p>Voxel Battle: Chaos Awakens (Voxel Battle 2) is a game developed by Teams24 which comes under the category of shooter and survival games. The game’s unique design blends both the genres of games and employs a unique algorithm for solving the enemy-crowding problem in normal 2D shooter video games. The game is a sequel of the Voxel Battle and with some noteworthy changes made in the game design to make it more chaotic and addictive. </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-content">
+                                    
+                                    <div class="conatiner-fluid" id="contentbox">
+                                        <div class="container-fluid" id="maincontentbox">
+                                            
+                                            <div class="row one">
+                                                <div class="col-lg-4">
+                                                    <img id="id" src="Connect.png">
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="main_contents" id="maintext">
+                                                        <p>Connect 4 is a game developed by Teams24 which comes under the category of puzzles and party games and is currently published on the Itch.io platform. Inspired from the classic cross-and-naughts (commonly known as X and O), the game brings new complexity to the puzzle and its unique design and GUI facilitates realistic gameplay </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-content">
+                                    
+                                    <div class="conatiner-fluid" id="contentbox">
+                                        <div class="container-fluid" id="maincontentbox">
+                                            
+                                            <div class="row one">
+                                                <div class="col-lg-4">
+                                                    <img id="id" src="Star.png">
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="main_contents" id="maintext">
+                                                        <p>Star Endurance is a game developed by Gamedevutopia which comes under the category of third person survival shooter and is currently published on the Itch.io platform. The game design is inspired from the old school arcade game named Asteroid, which is a space themed multidirectional shooter.Our game adds various twists to that concept.</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Slider pre and next arrow -->
+                            <a class="carousel-control-prev text-white" href="#testimonialCarousel" role="button" data-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a class="carousel-control-next text-white" href="#testimonialCarousel" role="button" data-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+    <!-- End testimonials Section -->
+    <!-- Project Gallery Section End -->
+
+
+    <!-- Contact Us Section Start-->
+    <section id="contact_section" class = "py-5" style = "background: linear-gradient(to right,  #010005DE 0%,#010005DE 79.375%,#FFBF00 79.375%,#FFBF00 100%);">
+        <div class = "d-md-flex g-5">
+            <div>
+                <div class = "h1 mx-3 text-center" style = "font-family: 'Zilla Slab', serif; color: #FDBE02;font-size: 350%;">Contact Us</div>
+                <form class = "container">
+                    <input type = "text" placeholder = "Your name" class = "input-box" id="i1">
+                    <input type = "email" placeholder="Email id" class = "input-box" id="i2">
+                    <textarea rows = "rows" cols = "cols" id = "mess1" placeholder="Send message here"></textarea><br>
+                    <input type = "submit" class = "sub btn btn-lg px-5 mx-5" style = "color: #010005DE; border-radius: 0px; font-family: Zilla Slab,serif;">
+                </form>
+            </div>
+            <div class = "container box mt-4 px-3 " style = "background-color: #252426; overflow:hidden;margin-bottom: 8%; box-shadow: 0px 12px 18px #000000;">
+                <img class = "img-fluid p-3" src = "joystick.png" alt = "img" id="joysk">
+            </div>
+        </div>
+        <section class = "sbox text-light my-5 py-4">
+            <div class = "container">
+                <div>
+                    <h3 style="text-align: center;">Our Handles.</h3>
+                    <div class="social">
+                        <a href = "https://www.instagram.com/gamedevutopia/">
+                            <img src="instagram_img.png" alt="img" class="imgs" id="img1">
+                        </a>
+                        <a href = "https://www.linkedin.com/company/gamedevutopia/mycompany/">
+                            <img src="linkedin_img.png" alt="img" class="imgs" id="img2">
+                        </a>
+                        <a href = "https://twitter.com/GameDevUtopia1?t=y8rfNGpeP8espFtFi58QoQ&s=08">
+                            <img src="twitter.png" alt="img" class="imgs" id="img3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Contact Us Section End -->
+
+    <!-- About Us Section Start -->
+    <section id = "about_us">
+        <!---heading---->
+        <section>
+            <h1 class="heading">
+            About Us
+            </h1>
+        </section>
+        <!------>
+
+
+        <!---intro----->
+        <div class="intro lead">
+        GameDevUtopia is the oﬃcial game development club of PICT established in 2020, allowing students to grow in the field of Game development.
+        Gamedevutopia brings people aware of the domain of Game Development and realizes its importance as a ﬂourishing industry.
+        GameDevUtopia supports the professional growth of its members by providing opportunities for life‐long learning, career development, and professional networking in game development.
+        Gamedevutopia has six different teams LOVE 2D team, the Design Team, the Unity team, the Marketing team, Administration team, Web team that helps to improve student’s skills in different domains
+
+
+        </div>
+        <!---------->
+
+        <!----cards------>
+        <div class="row outer">
+
+        <div class="card" style="background-color:rgba(238, 238, 238, 0.23);border-radius:70px;">
+            <div class="row inner">
+            <div class="col-lg-9 text">
+            LUA TEAM : In this team, we conducted different sessions, including the basics of Lua as a scripting language, tables as a data structure in Lua, and creating games using the Love2D Game Engine framework.
+
+            </div>
+            <div class="col-lg-3">
+            <img src="code_clipart.jpg" alt="image yet to be added" class="card_image">
+            </div>
+
+            </div>
+        </div>
+
+        </div>
+
+        <!--------->
+        <div class="row outer">
+
+        <div class="card" style="background-color:rgba(238, 238, 238, 0.23);border-radius:70px;">
+            <div class="row inner">
+
+            <div class="col-lg-3">
+            <img src="designerClipArt.png" alt="image yet to be added" class="card_image">
+            </div>
+            <div class="col-lg-9 text">
+                DESIGN TEAM:
+        This team works on the basics of Blender as a 3D modelling software and as a tool for creating 2D assets for the Games which we make. We have made many different Game assets using blenders and also many different themes of artwork.
+
+            </div>
+
+            </div>
+        </div>
+
+        </div>
+
+        <!----------->
+
+        <div class="row outer">
+
+        <div class="card" style="background-color:rgba(238, 238, 238, 0.23);border-radius:70px;">
+            <div class="row inner">
+            <div class="col-lg-9 text">
+            MARKETING TEAM : The marketing team works on marketing and advertisement of our club, and games through various social media platforms like Linked-in, Instagram, Twitter etc. and also manage sponsors for the event
+
+            </div>
+            <div class="col-lg-3">
+            <img src="MARKETING .jpg" alt="image yet to be added" class="card_image">
+            </div>
+
+            </div>
+        </div>
+
+        </div>
+
+        <!------------->
+        <div class="row outer">
+
+        <div class="card" style="background-color:rgba(238, 238, 238, 0.23);border-radius:70px;">
+            <div class="row inner">
+
+            <div class="col-lg-3">
+            <img src="webDevClipArt.png" alt="image yet to be added" class="card_image">
+            </div>
+            <div class="col-lg-9 text">
+            WEB DEV TEAM : Web Development is also one of the main team in gamedevutopia. The web development team makes new websites and organize activities are organized to help students sharpen their Web-Dev skills
+
+            </div>
+
+            </div>
+        </div>
+
+        </div>
+        <!------------->
+        <div class="row outer">
+
+        <div class="card" style="background-color:rgba(238, 238, 238, 0.23);border-radius:70px;">
+            <div class="row inner">
+            <div class="col-lg-9 text">
+                UNITY TEAM : unity team conducted the sessions to aware juniors regarding the unity interface, scripting, unity input system and many more things related to unity.
+
+            </div>
+            <div class="col-lg-3">
+            <img src="unity image.jpeg" alt="image yet to be added" class="card_image">
+            </div>
+
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <!-- navbar section start -->
+    <script>
+        function logo_click() {
+            var a=document.getElementById("pg")
+            if(a.style.display=="block"){
+                a.style.display="none"
+                document.getElementById("home").style.display="none";
+                document.getElementById("contact").style.display="none";
+                document.getElementById("aboutUs").style.display="none";
+                document.getElementById("title").style.display="none";
+                document.getElementById("nav_bar").style.backgroundColor="white";
+                document.getElementById("logo").style.borderRadius="10%";
+                document.getElementById("logo").style.marginLeft='50%'
+                  
+            }else{
+                document.getElementById("nav_bar").style.backgroundColor="black";
+                document.getElementById("title").style.display="block";
+                document.getElementById("home").style.display="block";
+                a.style.display="block";
+                document.getElementById("contact").style.display="block";
+                document.getElementById("aboutUs").style.display="block";
+                document.getElementById("logo").style.marginLeft='0%'
+            }
+        } 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- navbar section end -->
+
+    
+    <!-- home section start -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- home section end -->
+
+    
+    <!-- contact us section start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- contact us section end -->
+</body>
+</html>
