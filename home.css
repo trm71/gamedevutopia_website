@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%);
 }
 
-.carousel slide .carousel-item {
+.carousel .carousel-item {
   height: 500px;
 }
 
