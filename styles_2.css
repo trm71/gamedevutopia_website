@@ -30,7 +30,9 @@
 .text{
   color: #fff;
   font-family: Roboto;
-  padding: 2%;
+  padding-right: 0.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   text-align: left;
   font-size:1.5rem;
 }
@@ -39,10 +41,40 @@
   text-align:center;
 /*  width: 240px;
   height:240px;*/
-  width:200px;
-  height: 200px;
-  padding:10%;
+  width:180px;
+  height: 180px;
+  padding:5%;
   border-radius: 40px;
+}
+
+.team_name
+{
+  color:#FCBE02;
+}
+
+@media(max-width:1199px)
+{
+  .card_image
+  {
+    text-align:left;
+  /*  width: 240px;
+    height:240px;*/
+    width:160px;
+    height: 160px;
+
+    padding-left: :2%;
+
+    /*border-radius: 40px;*/
+  }
+  .outer
+  {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+
 }
 .intro
 {
@@ -58,14 +90,89 @@
 .card:hover{
   transform:translateY(-10px);
 }
-@media(max_width:1300px)
+@media(max-width:991px)
 {
-  .h1
-  {
-    color: blue;
-  }
   .card_image
   {
+    text-align:center;
+  /*  width: 240px;
+    height:240px;*/
+    width:250px;
+    height: 250px;
+
+    padding-left:5%;
+
+    /*border-radius: 40px;*/
+  }
+  .outer
+  {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  .intro
+  {
+    color: #fff;
+    font-family: Roboto;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  .img_box{
+    padding-left: 5%;
+    text-align: center;
+  }
+}
+@media(max-width:575px)
+{
+  .card_image
+  {
+    text-align:center;
+  /*  width: 240px;
+    height:240px;*/
+    width:250px;
+    height: 250px;
+
+    padding-left:5%;
+
+    border-radius: 40px;
+  }
+  .text{
+    color:#fff;
+    font-family: Roboto;
+    /*padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;*/
+    padding: 5%;
+    text-align: left;
+    font-size:1.5rem;
+  }
+  .img_box{
+    /*padding-left: 8%;*/
+    text-align: center;
+  }
+}
+@media (max-width:446px) {
+  .card_image
+  {
+    text-align:center;
+  /*  width: 240px;
+    height:240px;*/
+    width:200px;
+    height: 200px;
+
+    padding-right: 5%;
+
+    border-radius: 40px;
+  }
+  .img_box{
+    padding-left: 8%;
     text-align: center;
   }
 }
